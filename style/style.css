@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+SC&display=swap');
+body,
+button,
+input,
+select,
+textarea {
+    transition: all 1s ease;
+    font-family: 'Noto Serif SC', serif !important;
+}
+body{
+
+}
+header{
+    background: #ffffff;
+    width: 100%;
+    height: 2.2rem;
+    display: flex !important;
+    justify-content: space-between;
+    border-bottom: 1px #d6dbe3 solid !important;
+}
+header .post-title{
+    margin: 0.4rem;
+    color: rgb(74 74 74);
+    font-weight: 600;
+}
+.header_side{
+    height: 3rem;
+    width: 100%;
+    display: flex !important;
+    justify-content: space-between;
+    backdrop-filter: blur(10px);
+    z-index: 2;
+    background: hsla(0,0%,100%,.042);
+    box-shadow: inset 0 -1px 0 rgb(155 166 183 / 30%);
+}
+.header_side .post-title_side{
+    margin: 0.8rem;
+    color: rgb(41, 98, 245);
+    font-weight: 600;
+    letter-spacing: 5px;
+    border-right: 1px solid #00000036;
+}
+.header_side .header_side_left{
+    display: flex;
+
+}
+#nav_menu{
+    display: inline-flex;
+    margin: 0.8rem 0.8rem 0 0.8rem;
+}
+#nav_menu li{
+    margin-left: 1rem;
+    font-size: 0.96rem;
+}
+.Index_headerIMG{
+    background: url(../image/test.jpg);
+    width: 100%;
+    height: 25rem;
+    background-position: top;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 3rem;
+    z-index: -1;
+}
