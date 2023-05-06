@@ -7,8 +7,24 @@ textarea {
     transition: all 1s ease;
     font-family: 'Noto Sans SC', serif !important;
 }
+html{
+ --anBlueX: rgb(41, 98, 245);
+ --anBlueSmall: #eaf1ff ;
+}
 body{
 
+}
+@font-face {
+    font-family: "remixicon";
+    src: url("type/remixicon.eot");
+    /* IE9*/
+    src: url("type/remixicon.eot#iefix") format("embedded-opentype"),
+        /* IE6-IE8 */
+    url("type/remixicon.woff2?1681573354289") format("woff2"),
+    url("type/remixicon.woff?1681573354289") format("woff"),
+        /* chrome, firefox */
+    url("type/remixicon.svg#remixicon?1681573354289") format("svg");
+    /* iOS 4.1- */
 }
 header{
     background: #ffffff;
@@ -17,24 +33,36 @@ header{
     display: flex !important;
     justify-content: space-between;
     border-bottom: 1px #d6dbe3 solid !important;
+    position: fixed;
 }
-header .post-title{
+.post-title{
     margin: 0.4rem;
-    margin-left: 10rem;
-    color: rgb(74 74 74);
+    color: rgb(250, 250, 250);
     font-weight: 600;
+    text-align: center;
+    margin-top: 12rem;
+    font-size: 2rem;
+}
+.post-titleTALK{
+    margin: 0.4rem;
+    color: rgb(250, 250, 250);
+    font-weight: 600;
+    text-align: center;
+    margin-top: 1rem;
+    font-size: 1rem;
 }
 .header_side{
-    height: 100%;
+    height: 90%;
     width: 5rem;
     /* padding: 0 10%; */
     display: flex !important;
     justify-content: space-between;
     z-index: 2;
-    background: hsl(0deg 0% 100%);
-    box-shadow: inset 0 -1px 0 rgb(155 166 183 / 30%);
+    /* background: hsl(0deg 0% 100%); */
+    /* box-shadow: inset 0 -1px 0 rgb(155 166 183 / 30%); */
     position: fixed;
-    top: 0;
+    top: 5%;
+    border-radius: 1rem;
 }
 .header_side .post-title_side{
     margin: 0.8rem;
@@ -54,11 +82,14 @@ header .post-title{
     border-width: 3px;
     border-color: #ffffff2b;
 }
+body{
+    background: #f5f5f5;
+    padding: 1rem;
+}
 .header_side .header_side_left{
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    box-shadow: 0 4px 10px rgb(0 0 0 / 5%), 0 0 1px rgb(0 0 0 / 10%);
 }
 #nav_menu{
 
@@ -88,7 +119,7 @@ header .post-title{
     z-index: -1;
 }
 postlist{
-    width: 45vh;
+    width: 64vh;
     display: block;
     background: #f4f4f49e;
     height: 95%;
@@ -121,4 +152,99 @@ postlist{
 }
 ::-webkit-scrollbar {
     width: 4px;
+}
+container{
+    display: flex;
+    padding-top: 2.34rem;
+    padding-left: 4rem;
+    flex-wrap: wrap;
+}
+.IndexFirst{
+    width: 95%;
+}
+indexList{
+    width: 100%;
+    display: flex;
+    height: 100%;
+    flex-direction: row;
+    justify-content: center;
+}
+.homeSvg{
+    font-size: 26px;
+    text-align: center !important;
+    display: block;
+    width: 26px;
+    margin-left: 11px;
+}
+.moduleF{
+    background: var(--anBlueX);
+    width: 100%;
+    height: 68%;
+    border-radius: 1rem;
+    margin-left: 3rem;
+    box-shadow: 0 4px 10px rgb(0 107 255 / 12%), 0 0 1px rgb(161 198 255 / 36%);
+    padding: 1px;
+}
+.moduleF img{
+    width: 100%;
+    height: 100%;
+    border-radius: 1rem;
+    background-size: cover;
+    overflow: hidden;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+}
+.moduleF .moduleFedit{
+    position: relative;
+    top: -5rem;
+    left: 1rem;
+    color: white;
+    background: #ffffff2b;
+    backdrop-filter: blur(5px);
+    width: 50%;
+    padding: 1rem;
+    border-radius: 1rem;
+}
+.moduleS{
+    background: rgb(255 255 255);
+
+    height: 14rem;
+    border-radius: 1rem;
+    margin-left: 3rem;
+    box-shadow: 0 4px 10px rgb(0 107 255 / 12%), 0 0 1px rgb(161 198 255 / 36%);
+    padding: 1px;
+}
+.moduleSt{
+    background: rgb(255 255 255);
+
+    height: 14rem;
+    border-radius: 1rem;
+    margin-left: 3rem;
+    box-shadow: 0 4px 10px rgb(0 107 255 / 12%), 0 0 1px rgb(161 198 255 / 36%);
+    padding: 1px;
+}
+.IndexSC{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-top: -17%;
+    width: 95%;
+}
+.IndexSC .IndexT{
+    width: 33%;
+}
+.IndexSC .IndexS{
+    width: 33%;
+}
+.IndexSC .IndexST{
+    width: 33%;
+}
+.moduleStT{
+    background: rgb(255 255 255);
+
+    height: 14rem;
+    border-radius: 1rem;
+    margin-left: 3rem;
+    box-shadow: 0 4px 10px rgb(0 107 255 / 12%), 0 0 1px rgb(161 198 255 / 36%);
+    padding: 1px;
 }
